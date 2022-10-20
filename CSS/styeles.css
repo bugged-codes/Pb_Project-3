@@ -60,10 +60,6 @@ nav{
         width: 50px;
         background: 0% 0% no-repeat padding-box;
     }
-    .fa-circle-plus{
-        /* UI Properties */
-        color: #00A5EC;
-    }
 
 /* To Do Cards */
 #div-cards-parent{
@@ -145,7 +141,7 @@ nav{
     }
 
 
-/*********************/
+/**************************************************************************************** */
 /******2nd & 4th Page Hovering Cards*******/
 
 .container{
@@ -177,7 +173,7 @@ nav{
         flex-wrap: nowrap;
         align-content: space-between;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }   
     /* Heading Text Properties */
     .hover-header-content{
@@ -244,12 +240,7 @@ nav{
     }
 
 
-/*********************/
-/******2nd Page*******/
-
-
-
-/*********************/
+/***************************************************************************************** /
 /******3rd Page*******/
 
 /* Navigation Buttons styling */
@@ -310,3 +301,103 @@ nav{
         box-shadow: 5px 5px 10px #c2c2c2;
         transition: 0.3s ease-out 0s;
     }
+
+
+/*********************************************************************  ******************************************************************** */
+/* Media Queries for Mobile/Smartphone devices and Responsive screens */
+
+
+@media only screen and (max-width:420px) {
+
+    /* Removing the extra bottom margin from Body*/
+    body{
+        margin-bottom: 0;
+    }
+
+    /* Entire Navbar */
+    nav{
+        /* Layout Properties */
+        display: flex;
+        width: 100%;
+        height: 11vh;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 0.5rem;
+        /* UI Properties */
+        font: normal normal bold 24px/29px Inter;
+    }
+        nav div{
+            position: static;
+        }
+
+    /* Add Task Button */
+    #div-add-parent {
+        position: static;
+        width: 100%;
+    }
+        /* ! Removing the Text along with ADD icon
+        [href="./Pages/index2.html"],[href="./index4.html"]{
+            display: none;
+        }*/
+        /*! Enabling the Display as BLOCK  only for Icon 
+        #span-hover-add, [href="./index4.html"] span{
+            display: unset;
+        }*/
+
+        /* Centering that Add button */
+        #div-add-parent span{
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
+        }
+
+    /* To Do cards   */
+    #div-cards-parent{
+        width: 100%;
+        position: static;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+    /* ****************** Hovering Cards ****************** */
+    /* Reducing the width */
+    .div-hover-parent{
+        position: relative;
+        bottom: 110rem;
+        width: 100%;
+        top: initial;
+        left: initial;
+    }
+        /* Reducing Margin of HR line */
+        .div-hover-parent .div-hr{
+            margin: 0.5rem 0;
+        }
+        /* Increasing Line height of the Text Input area  */
+        .div-text-input input[type="text"]{
+            line-height: 3em;
+        }
+        /* Adjusting Add New Task button on Hovering Card */
+        .hover-add-parent{
+            position: relative;
+            left: 11rem;
+            bottom: -1rem;
+        }
+
+        /* Page3 Card */
+        #card-container{
+            width: 95%;
+        }
+        .page3-card>div{
+            font-size: 22px;
+        }
+
+        /* Page4 Hovering Card */
+        #div-hover-parent2{
+            bottom: 23rem;
+        }
+}
