@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Font Awesome script  -->
+        <script src="https://kit.fontawesome.com/b60e8d17ed.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+        </style>
+
+        <!-- Externally linked CSS -->
+        <link rel="stylesheet" href="../CSS/styeles.css" />
+
+        <title>3rd-Page</title>
+    </head>
+    <body>
+        <nav>
+            <!-- Top Navbar -->
+            <div class="div-nav" id="div-nav">
+                Tasks
+                <span class="span , nav" id="span-nav-top"> List </span>
+            </div>
+        </nav>
+
+        <div id="nav-icons-parent">
+            <!-- Back Button -->
+            <div id="div-back-parent">
+                <div class="back-button">
+                    <a href="../index.html">
+                        <span>
+                            <i class="fa-solid fa-circle-arrow-left fa-lg"> </i>
+                        </span>
+                        Back
+                    </a>
+                </div>
+            </div>
+            <!-- Add New task button -->
+            <div id="div-add-parent2">
+                <div class="add-button2">
+                    <a href="./index4.html">
+                        <span>
+                            <i class="fa-solid fa-circle-plus fa-xl"> </i>
+                        </span>
+                        Add New Task
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- To Do Card -->
+        <div id="card-container">
+            <div class="div-cards page3-card" id="card1">
+                <div class="cards-heading">Trip to Paris</div>
+
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Visit Church" name="Visit Church" />
+                        <label for="Visit Church">Visit Church </label>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Shopping" name="Shopping" />
+                        <label for="Shopping">Shopping </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

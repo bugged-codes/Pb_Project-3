@@ -1,0 +1,312 @@
+/* Background for Entire Body */
+body{
+    background-color: #F7F7F7;
+    margin-bottom: 15rem;
+}
+/* Removing text-decoration for all anchor tags in Project */
+a{
+    text-decoration: none;
+}
+
+
+/* Top Navbar */
+nav{
+    /* Layout Properties */
+    width:  100%;
+    height: 94px;
+    box-shadow: 0px 3px 30px #7B7B7B29;
+}
+
+    /* Navbar Text */
+    nav div{
+        /* Layout Properties */
+        position: relative;
+        top: 23px;
+        left: 137px;
+        width: 200px;
+        height: 49px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 40px/49px Inter; 
+        letter-spacing: 0px;
+    }
+    nav span{
+        color: #00A5EC;
+    }
+
+/* Add New Task button & Text*/
+#div-add-parent{
+    /* Layout Properties */
+    position: relative;
+    top: 50px;
+    left: 1011px;
+    width: 215px;
+    height: 50px;
+}
+    /* Anchor tag styling */
+    #div-add-parent a{
+        /* UI Properties */
+        text-align: left;
+        font: normal normal normal 22px/26px Inter;
+        letter-spacing: 0px;
+        color: #424242;
+        text-decoration: none;
+    }
+    /* Add Button Styling */
+    #div-add-parent span{
+        /* Layout Properties */
+        margin-right: 0.5rem;
+        height: 50px;
+        width: 50px;
+        background: 0% 0% no-repeat padding-box;
+    }
+    .fa-circle-plus{
+        /* UI Properties */
+        color: #00A5EC;
+    }
+
+/* To Do Cards */
+#div-cards-parent{
+    /* Flex Layout Properties */
+    width: 75%;
+    position: relative;
+    top: 90px;
+    left: 129px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+    .div-cards{
+        /* Layout Properties */
+        width: 346px;
+        height: 400px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        margin: 10px 10px;
+    }
+    /* Cards Heading */
+    .cards-heading{
+        /* Layout Properties */
+        width: 300px;
+        height: 24px;
+        margin-top  : 1rem;
+        padding: 1.5rem;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 20px/24px Inter;
+        letter-spacing: 0px;
+        color: #00A5EC;
+    }
+    /* Styles For Horizontal Lines In Each Card */
+    .div-hr{
+        /* Layout Properties */
+        width: 100%;
+        height: 0px;
+        margin: 1rem 0px;
+        border: 1px solid #EDEDED;
+    }
+    /* Styles for Card contents */
+    .cards-content{
+        /* Layout Properties */
+        width: 215px;
+        height: 100px;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        font: normal normal normal 18px/21px Inter;
+        letter-spacing: 0px;
+    }
+    /* Styling the Checkboxes */
+    input[type=checkbox] {
+        accent-color: #C2C2C2;  
+        width: 30px;
+        height: 30px;
+        /* background: #F7F7F7 0% 0% no-repeat padding-box; */
+    }
+    /* Positioning the Card contents according to checkboxes */
+    label{
+        position: relative;
+        left: 0.3rem;
+        top: -10px;
+        line-height: 51px;
+    }
+    /* Strikethrough styling for labels of checked boxes in cards */
+    .checked-label{
+        display: inline;
+        color: #C2C2C2;
+        text-decoration: line-through solid ;
+    }
+    /* Style for labels of uncheked boxes */
+    .div-uncheked-content{
+        color: #424242;
+    }
+
+
+/*********************/
+/******2nd & 4th Page Hovering Cards*******/
+
+.container{
+    filter: opacity(0.8) brightness(0.3) blur(2px);
+    
+}
+
+/* Styling for the Hovering Card */
+.div-hover-parent{
+    position: absolute;
+    display: inline-block;
+    top: 14rem;
+    left: 510px;
+    width: 500px;
+    height: 250px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #67676729;
+    border: 2px solid #EDEDED;
+    border-radius: 10px;
+}
+    /*  Heading section of the Hovering Card*/
+    .hover-header{
+        /* Layout Properties */
+        width: 90%;
+        height: 26px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: flex-end;
+    }   
+    /* Heading Text Properties */
+    .hover-header-content{
+        /* UI Properties */
+        text-align: left;
+        font: normal normal 600 22px/26px Inter;
+        letter-spacing: 0px;
+        color: #404040;
+    }
+
+    /* Cross Icon Styling */
+    #div-hover-cross{
+        width: 18px;
+        height: 18px;
+    }
+    .div-hover-parent a{
+        text-decoration: none;
+        color: #858585;
+    }
+    .fa-xmark{
+        height: 18px;
+        width: 18px;   
+    }
+    .div-text-input{
+        padding: 1rem;
+        width: 90%;
+    }
+
+    /* Input Box Background &  Layout styling*/
+    input[type=text]{
+        background: #F7F7F7 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        line-height: 2em;
+    }
+
+    /* Styling for Add New Task button & text on Hovering cards */
+    .hover-add-parent{
+        width: 180px;
+        height: 48px;
+        position: relative;
+        left: 16rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        /* UI Properties */
+        background: #00A5EC 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        text-align: left;
+        font: normal normal normal 16px/21px Inter;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+    .fa-plus{
+        margin-right: 0.5rem;
+        color: white;
+    }
+    /* Hovering Cards Anchor tag Styling */
+    .hover-add-parent a{
+        color: white;
+    }
+
+
+/*********************/
+/******2nd Page*******/
+
+
+
+/*********************/
+/******3rd Page*******/
+
+/* Navigation Buttons styling */
+#nav-icons-parent{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: flex-end;
+}
+    /* Anchor tag styling */
+    #nav-icons-parent a{
+        /* UI Properties */
+        text-align: left;
+        font: normal normal normal 22px/26px Inter;
+        letter-spacing: 0px;
+        color: #424242;
+        text-decoration: none;
+    }
+    /* Add & Back Button Styling */
+    #nav-icons-parent span{
+        /* Layout Properties */
+        margin-right: 0.5rem;
+        height: 50px;
+        width: 50px;
+        background: 0% 0% no-repeat padding-box;
+    }
+    .fa-circle-plus{
+        /* UI Properties */
+        color: #00A5EC;
+    }
+
+/* 3rd Page To Do Crad Stylig */
+#card-container{
+    width: 39%;
+    height: 400px;
+    margin: 2rem auto;
+}
+    .page3-card{
+        margin: 1px;
+        width: 100%;
+        height: 400px;
+    }
+    /* 3rd Page Card Heading */
+    .page3-card .cards-heading{
+        width: 100%;
+        text-align: center;
+        padding: 0 0;
+        margin: 2.5rem 0;
+    }
+
+/* Transition Effect for Cards on 1st Page */
+    .transition-cards:hover{
+        transform: scale(105%);
+        box-shadow: 5px 5px 10px #c2c2c2;
+        transition: 0.3s ease-out 0s;
+    }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Font Awesome script  -->
+        <script src="https://kit.fontawesome.com/b60e8d17ed.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+        </style>
+
+        <!-- Externally linked CSS -->
+        <link rel="stylesheet" href="../CSS/styeles.css" />
+
+        <title>2nd-Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <!-- Top Navbar -->
+                <div class="div-nav" id="div-nav">
+                    Tasks
+                    <span class="span , nav" id="span-nav-top"> List </span>
+                </div>
+            </nav>
+
+            <!-- Add New task button -->
+            <div id="div-add-parent">
+                <div class="add-button">
+                    <span>
+                        <i class="fa-solid fa-circle-plus fa-xl"> </i>
+                    </span>
+                    Add New Task
+                </div>
+            </div>
+
+            <!-- 5 To Do Cards -->
+            <div id="div-cards-parent">
+                <!-- 1st card/Top Left -->
+                <div class="div-cards" id="card1">
+                    <div class="cards-heading">Trip to Paris</div>
+
+                    <div class="div-hr"></div>
+                    <!--Horizontal Line -->
+                    <div class="cards-content">
+                        <div class="div-checked-content">
+                            <input type="checkbox" checked id="Visit Church" name="Visit Church" />
+                            <label for="Visit Church">Visit Church </label>
+                        </div>
+
+                        <div class="div-uncheked-content">
+                            <input type="checkbox" id="Shopping" name="Shopping" />
+                            <label for="Shopping">Shopping </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd Card -->
+                <div class="div-cards" id="card2">
+                    <div class="cards-heading">My To Do List</div>
+                    <div class="div-hr"></div>
+                    <!--Horizontal Line -->
+                    <div class="cards-content">
+                        <div class="div-checked-content">
+                            <input type="checkbox" checked id="Visit Supermarket" name="Visit Supermarket" />
+                            <label for="Visit Supermarket">Visit Supermarket </label>
+                        </div>
+
+                        <div class="div-uncheked-content">
+                            <input type="checkbox" id="Buy Vegetables" name="Buy Vegetables" />
+                            <label for="Buy Vegetables">Buy Vegetables </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd Card -->
+                <div class="div-cards" id="card3">
+                    <div class="cards-heading">Movies I Will Watch</div>
+                    <div class="div-hr"></div>
+                    <!--Horizontal Line -->
+                    <div class="cards-content">
+                        <div class="div-checked-content">
+                            <input type="checkbox" checked id="Stranger Things 4" name="Stranger Things 4" />
+                            <label for="Stranger Things 4">Stranger Things 4 </label>
+                        </div>
+
+                        <div class="div-uncheked-content">
+                            <input type="checkbox" id="Avengers Endgame" name="Avengers Endgame" />
+                            <label for="Avengers Endgame">Avengers Endgame </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th Card -->
+                <div class="div-cards" id="card4">
+                    <div class="cards-heading">Daily Morning Routine for...</div>
+                    <div class="div-hr"></div>
+                    <!--Horizontal Line -->
+                    <div class="cards-content">
+                        <div class="div-checked-content">
+                            <input type="checkbox" checked id="Wake up at 6 AM" name="Wake up at 6 AM" />
+                            <label for="Wake up at 6 AM">Wake up at 6 AM </label>
+                        </div>
+
+                        <div class="div-uncheked-content">
+                            <input type="checkbox" id="Sleeep at 10 PM" name="Sleeep at 10 PM" />
+                            <label for="Sleeep at 10 PM">Sleeep at 10 PM </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5th Card -->
+                <div class="div-cards" id="card5">
+                    <div class="cards-heading">Books to Read</div>
+                    <div class="div-hr"></div>
+                    <!--Horizontal Line -->
+                    <div class="cards-content">
+                        <div class="div-checked-content">
+                            <input type="checkbox" checked id="Design of Everyday" name="Design of Everyday" />
+                            <label for="Design of Everyday">Design of Everyday </label>
+                        </div>
+
+                        <div class="div-uncheked-content">
+                            <input type="checkbox" id="Alchemist" name="Alchemist" />
+                            <label for="Alchemist">Alchemist </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page2 Hovering Card -->
+        <div class="div-hover-parent" id="div-hover-parent1">
+            <div class="hover-header" id="hover-header1">
+                <div class="hover-header-content" id="text">Add New Task</div>
+
+                <div class="div-hover-cross" id="div-hover-cross">
+                    <a href="../index.html">
+                        <span>
+                            <i class="fa-solid fa-xmark fa-xl"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!--Horizontal Line -->
+            <div class="div-hr"></div>
+            <!-- Text Input -->
+            <div class="div-text-input" id="divtext-input1">
+                <input type="text" name="text1" id="text1" size="45" placeholder="Learn C++" />
+            </div>
+
+            <div class="hover-add-parent" id="hover-add-parent1">
+                <a href="./index3.html">
+                    <span class="span-hover-add" id="span-hover-add">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    Add New Task
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Icons/Favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Icons/Favicons/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./Assets/Icons/Favicons/favicon-96x96.png" />
+
+        <!-- Font Awesome script  -->
+        <script src="https://kit.fontawesome.com/b60e8d17ed.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+        </style>
+
+        <!-- Externally linked CSS -->
+        <link rel="stylesheet" href="./CSS/styeles.css" />
+
+        <title>Project-2</title>
+    </head>
+    <body>
+        <nav>
+            <!-- Top Navbar -->
+            <div class="div-nav" id="div-nav">
+                Tasks
+                <span class="span , nav" id="span-nav-top"> List </span>
+            </div>
+        </nav>
+
+        <!-- Add New task button -->
+        <div id="div-add-parent">
+            <div class="add-button">
+                <a href="./Pages/index2.html">
+                    <span>
+                        <i class="fa-solid fa-circle-plus fa-xl"> </i>
+                    </span>
+                    Add New Task
+                </a>
+            </div>
+        </div>
+
+        <!-- 5 To Do Cards -->
+        <div id="div-cards-parent">
+            <!-- 1st card/Top Left -->
+            <div class="div-cards transition-cards" id="card1">
+                <a href="./Pages/index3.html">
+                    <div class="cards-heading">Trip to Paris</div>
+                </a>
+
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Visit Church" name="Visit Church" />
+                        <div class="checked-label">
+                            <label for="Visit Church">Visit Church </label>
+                        </div>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Shopping" name="Shopping" />
+                        <label for="Shopping">Shopping </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd Card -->
+            <div class="div-cards transition-cards" id="card2">
+                <div class="cards-heading">My To Do List</div>
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Visit Supermarket" name="Visit Supermarket" />
+                        <div class="checked-label">
+                            <label for="Visit Supermarket">Visit Supermarket </label>
+                        </div>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Buy Vegetables" name="Buy Vegetables" />
+                        <label for="Buy Vegetables">Buy Vegetables </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd Card -->
+            <div class="div-cards transition-cards" id="card3">
+                <div class="cards-heading">Movies I Will Watch</div>
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Stranger Things 4" name="Stranger Things 4" />
+                        <div class="checked-label">
+                            <label for="Stranger Things 4">Stranger Things 4 </label>
+                        </div>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Avengers Endgame" name="Avengers Endgame" />
+                        <label for="Avengers Endgame">Avengers Endgame </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th Card -->
+            <div class="div-cards transition-cards" id="card4">
+                <div class="cards-heading">Daily Morning Routine for...</div>
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Wake up at 6 AM" name="Wake up at 6 AM" />
+                        <div class="checked-label">
+                            <label for="Wake up at 6 AM">Wake up at 6 AM </label>
+                        </div>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Sleeep at 10 PM" name="Sleeep at 10 PM" />
+                        <label for="Sleeep at 10 PM">Sleeep at 10 PM </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th Card -->
+            <div class="div-cards transition-cards" id="card5">
+                <div class="cards-heading">Books to Read</div>
+                <!--Horizontal Line -->
+                <div class="div-hr"></div>
+
+                <!-- Checkboxes -->
+                <div class="cards-content">
+                    <div class="div-checked-content">
+                        <input type="checkbox" checked id="Design of Everyday" name="Design of Everyday" />
+                        <div class="checked-label">
+                            <label for="Design of Everyday">Design of Everyday </label>
+                        </div>
+                    </div>
+
+                    <div class="div-uncheked-content">
+                        <input type="checkbox" id="Alchemist" name="Alchemist" />
+                        <label for="Alchemist">Alchemist </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

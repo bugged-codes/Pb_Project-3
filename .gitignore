@@ -1,0 +1,4 @@
+# File to ignore items from git tracking.
+/Reference.txt
+/3rd-Project.code-workspace
+.vscode/
